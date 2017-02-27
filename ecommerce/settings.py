@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'dashboard'
+    'dashboard',
 ]
 
 MIDDLEWARE = [
@@ -119,3 +119,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+
+#For offline testing we used static folder outside the BASE_DIR
+if DEBUG:
+    MEDIA_URL = '/media/'
+    STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR),"static","static-only")
+    MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR),"static","media")
+    STATICFILES_DIRS = (
+        os.path.join(os.path.dirname(BASE_DIR),"static","static"),
+        )
