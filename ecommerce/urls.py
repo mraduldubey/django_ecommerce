@@ -19,11 +19,12 @@ from django.conf import settings
 from django.conf.urls.static import static #for static files on local server.
 
 from dashboard import views
-
+from contact import views as cont_views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.home, name='home'),
-    url(r'^about/$', views.about,name='about')
+    url(r'^about/$', views.about,name='about'),
+    url(r'^contact/$', cont_views.contact,name='contact')
 ]
 
 if settings.DEBUG: 
