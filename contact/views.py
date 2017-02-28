@@ -10,17 +10,21 @@ def contact(request):
 	"""about page"""
 	title = "Contact"
 	form = contactForm(request.POST or None) #form handling by view.
+	confirmation = None
 	
 	if form.is_valid():
-		user_name = form.cleaned_data['username']
-		user_message = form.cleaned_data['message']
-		emailsub = user_name + " tried contacting you on mDecommerce."
-		emailFrom = form.cleaned_data['useremail']
+		user_name = form.cleaned_data['Username']
+		user_message = form.cleaned_data['Message']
+		emailsub = user_name + " tried contacting you on mD ecommerce."
+		emailFrom = form.cleaned_data['UserEmail']
 		emailmessage = '%s %s user email: %s' %(user_message, user_name, emailFrom)
 		emailTo = [settings.EMAIL_HOST_USER]
 		send_mail(emailsub, emailmessage, emailFrom, emailTo, fail_silently=True)
 		autoreply.autoreply(emailFrom)
-	context = locals()
+		title = "Thanks."
+		confirmation = "We will get right back to you."
+		form = None
+	
+	context = {'title':title, 'form':form, 'confirmation':confirmation,}
 	template = 'contact.html' 
 	return render(request,template,context)
- 
