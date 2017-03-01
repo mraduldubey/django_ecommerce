@@ -21,6 +21,7 @@ from django.conf.urls import include
 
 from dashboard import views as dash_views
 from contact import views as cont_views
+from checkout import views as check_views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', dash_views.home, name='home'),
@@ -28,6 +29,8 @@ urlpatterns = [
     url(r'^dashboard/$', dash_views.dashboard,name='dashboard'),
     url(r'^contact/$', cont_views.contact,name='contact'),
     url(r'^accounts/', include('allauth.urls')),
+    url(r'^checkout/$', check_views.checkout,name='checkout'),
+
 ]
 
 if settings.DEBUG: 

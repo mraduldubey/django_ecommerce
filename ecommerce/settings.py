@@ -49,6 +49,8 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'stripe',
+    'checkout',
 ]
 
 MIDDLEWARE = [
@@ -185,3 +187,13 @@ ACCOUNT_USERNAME_MIN_LENGTH = 6
 ACCOUNT_USERNAME_REQUIRED = True
 ACCOUNT_PASSWORD_INPUT_RENDER_VALUE =False #password not shown when typed.
 ACCOUNT_PASSWORD_MIN_LENGTH = 6
+
+#stripe
+
+#testkeys
+STRIPE_PUBLISHABLE_KEY='mystripeapitestkey'
+STRIPE_SECRET_KEY ='mystripeapisecrettestkey'
+
+#LIVE KEYS
+#STRIPE_PUBLISHABLE_KEY=''
+#STRIPE_SECRET_KEY =''
