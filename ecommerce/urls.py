@@ -19,12 +19,13 @@ from django.conf import settings
 from django.conf.urls.static import static #for static files on local server.
 from django.conf.urls import include
 
-from dashboard import views
+from dashboard import views as dash_views
 from contact import views as cont_views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', views.home, name='home'),
-    url(r'^about/$', views.about,name='about'),
+    url(r'^$', dash_views.home, name='home'),
+    url(r'^about/$', dash_views.about,name='about'),
+    url(r'^dashboard/$', dash_views.dashboard,name='dashboard'),
     url(r'^contact/$', cont_views.contact,name='contact'),
     url(r'^accounts/', include('allauth.urls')),
 ]
