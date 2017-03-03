@@ -10,7 +10,7 @@ def autoreply(toaddr):
 	fromaddr = "mraduldubeymd19@gmail.com" 
 	msg = MIMEMultipart()
 	 
-	msg['From'] = "mraduldubeymd19@gmail.com"
+	msg['From'] = "admin_email"
 	msg['To'] = toaddr
 	msg['Subject'] = "Contact mDeommerce reply"
 	 
@@ -30,7 +30,7 @@ def autoreply(toaddr):
 	 
 	server = smtplib.SMTP('smtp.gmail.com', 587)
 	server.starttls()
-	server.login(fromaddr, "#30091956#")
+	server.login(fromaddr, "admin_email_password")
 	text = msg.as_string() 
 	server.sendmail(fromaddr, toaddr, text)
 	server.quit()

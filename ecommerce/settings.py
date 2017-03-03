@@ -191,8 +191,8 @@ ACCOUNT_PASSWORD_MIN_LENGTH = 6
 #stripe
 
 #testkeys
-STRIPE_PUBLISHABLE_KEY='mystripeapitestkey'
-STRIPE_SECRET_KEY ='mystripeapisecrettestkey'
+STRIPE_PUBLISHABLE_KEY='pk_test_yKmlZXk05TQsuCzvKBr7uNJs'
+STRIPE_SECRET_KEY ='sk_test_TcuxME2xfjNgdYwzKPFrNYtu'
 
 #LIVE KEYS
 #STRIPE_PUBLISHABLE_KEY=''
