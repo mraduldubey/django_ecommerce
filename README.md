@@ -1,6 +1,19 @@
 # django_ecommerce
 <p><b>Although, I am going to host this app on pythonanywhere with a little changes, here is the current status of this app: A Django-based backend of an eCommerce web app. It packs all the basic features of a basic eCommerce website i.e. Login, SignUp, Customer Payments, Refunds, Social network integration etc with dynamic web pages having Bootstrap & jQuery support.</b></p>
 
+<h2>To run on Local Machine</h2>
+<ul>
+<li> Install Python and Django, preferably in a virtualenv</li>
+<li> Copy the static folder and save it just outside this repository</li>
+<li>Change to directory and run following commands</li>
+<li>python manage.py makemigrations</li>
+<li>python manage.py migrate</li>
+<li> python manahe.py collectstatic</li>
+<li> python manage.py runserver</li>
+<li> Open browser and go to:http://127.0.0.1:8000/ </li>
+<li> Go to http://127.0.0.1:8000/checkout for checkout page</li>
+</ul>
+
 <h2>Current Features</h2>
 <ul>
 <li>User SignUp/Login</li>
