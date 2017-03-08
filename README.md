@@ -1,5 +1,5 @@
 # django_ecommerce
-<p><b>Although, I am going to host this app on pythonanywhere with a little changes, here is the current status of this app: A Django-based backend of an eCommerce web app. It packs all the basic features of a basic eCommerce website i.e. Login, SignUp, Customer Payments, Refunds, Social network integration etc with dynamic web pages having Bootstrap & jQuery support.</b></p>
+<p><b> A Django-based backend of an eCommerce web app. It packs all the basic features of a basic eCommerce website i.e. Login, SignUp, Customer Payments, Refunds, Social network integration etc with dynamic web pages having Bootstrap & jQuery support.</b></p>
 
 <h2>To run on Local Machine</h2>
 <ul>
@@ -27,5 +27,5 @@
 
 <h2>Upcoming Features</h2>
 <ul>
-<li> As I am going to host it on pythonanywhere, I'll make substantial changes to the frontend of the webapp while hosting it.</li>
 <li>Search Functionality.</li>
+</ul>
