@@ -2,7 +2,10 @@
 
 
 
-**A Django-based backend template for an eCommerce web app. It packs all the basic features of a basic eCommerce website i.e. Login, SignUp, Customer Payments, Refunds, Social network integration etc with dynamic web pages having Bootstrap & jQuery support.**
+**A Django-based backend template for an eCommerce web app.
+It aims to be easily extensible for any functional e-commerce application.
+So, it packs all the basic features of a basic eCommerce website i.e. User Authentication, Customer Payments,
+ Refunds, Social network integration etc with dynamic web pages having Bootstrap & jQuery support.**
 
 
 
